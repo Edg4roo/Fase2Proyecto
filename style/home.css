@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header ul {
+    margin-top: 3.2rem;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+#search_block {
+    float: right;
+    clear: none;
+}
