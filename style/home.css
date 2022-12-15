@@ -4,9 +4,31 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(/img/background/home);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header */
+
+header {
+    padding-top: 0.7rem;
+    border: 1px solid black;
+}
+
 header ul {
-    margin-top: 3.2rem;
+    margin-top: 3rem;
     list-style: none;
+}
+
+#header_icon {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 header ul li {
@@ -14,7 +36,6 @@ header ul li {
     margin-right: 4rem;
     font-size: 0.8rem;
     font-weight: bold;
-    padding: 0rem;
 }
 
 header ul li a {
@@ -25,5 +46,51 @@ header ul li a {
 
 #search_block {
     float: right;
-    clear: none;
+    display: flex;
 }
+
+#search_block img {
+    float: left;
+}
+
+#search_block input {
+    justify-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 5rem;
+}
+
+
+/* Main */
+
+main {
+    padding-top: 10rem;
+}
+
+#direct_links div {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+#direct_links h2{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+/* Section_1 */
+
+#section_1 {
+    position: relative;
+}
+
+#front_products {
+    position: absolute;
+    bottom: 2rem;
+}
+
+#front_products div div {
+    padding: 5rem;
+    border: 1px solid black;
+}
+
