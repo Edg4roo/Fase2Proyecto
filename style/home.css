@@ -14,7 +14,10 @@ header {
     border: 1px solid black;
     position: fixed;
     width: 100%;
-    background-color: aqua ;
+}
+
+#header_icon {
+    display: flex;
 }
 
 header div div {
@@ -44,6 +47,7 @@ header ul li a {
 #search_block {
     float: right;
     display: flex;
+    margin-right: 1rem;
 }
 
 #search_block img {
@@ -86,8 +90,8 @@ header ul li a {
  #front_products div div {
     display: flex;
     margin: 1rem;
-    width: 30rem;
-    height: 7rem;
+    width: 25rem;
+    height: 7.5rem;
     border: 1px solid transparent;
     border-radius: 10px;
     background-image: url(/img/background/front_products_btn.jpg);
@@ -104,11 +108,12 @@ header ul li a {
 
  #front_products div div img {
     align-self:center;
-    margin-right: 100px;
+    height: 100%;
  }
 
  #front_products div div h2 {
     align-self: center;
+    font-size: 3rem;
+    margin-left: 2rem;
+    text-shadow: 0 1px 0 transparent, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
  }
-
-
