@@ -16,12 +16,20 @@
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-1" id="header_icon">
+                <div class="col-6" id="header_icon">
                     <img src="/img/icons/icono1.png" alt="verdularia">
                 </div>
-                <div class="col-8">
+                <div class="col-6">
+                    <div id="search_block">
+                        <img src="/img/icons/search.png" alt="lupa">
+                        <input type="text" name="search" id="search">
+                        <img src="/img/icons/user.png" alt="user">
+                        <img src="/img/icons/shopping_kart.png" alt="user">
+                    </div>
+                </div>
+                <div class="row">
                     <ul>
                         <li><a href="">Comprar</a></li>
                         <li><a href="">Conocenos</a></li>
@@ -30,22 +38,18 @@
                         <li><a href="">Videos</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
-                    <div id="search_block">
-                        <img src="/img/icons/search.png" alt="lupa">
-                        <input type="text" name="search" id="search">
-                        <img src="/img/icons/user.png" alt="user">
-                        <img src="/img/icons/shopping_kart.png" alt="user">
-                    </div>
-                </div>
             </div>
         </div>
 
 
     </header>
     <main>
+        <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+            <source src="/img/video.mp4" type="video/mp4" />
+        </video>
+
         <section id="section_1">
-            <div class="container-fluid" id="front_products">
+            <div class="container-fluid" id="main_menu">
                 <div class="row">
                     <div class="col-4">
                         <img src="img/misc/banana.webp" alt="frutas">
@@ -76,9 +80,86 @@
                 </div>
             </div>
         </section>
-        <div id="section_2">
-            <h1>hola</h1>
-        </div>
+        <section id="section_2">
+            <h1>De la tierra a tu mesa</h1>
+            <div class="container-fluid">
+                <h2>Productos de temporada</h2>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="front_product">
+                            <div>
+                                <img src="/img/misc/banana.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Banana</h3>
+                                <h3>1.30€/kg</h3>
+                                <button type="button">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
