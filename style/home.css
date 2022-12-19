@@ -38,7 +38,7 @@ header {
     position: fixed;
     width: 100%;
     height: 5rem;
-    background: linear-gradient(to bottom, black, blue);
+    background: linear-gradient(to bottom, black, transparent);
     z-index: 9999999;
 }
 
@@ -67,7 +67,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -132,40 +132,52 @@ header ul li a {
 /* Section_2 */
 
 #section_2 {
+    background: linear-gradient(90deg, rgba(179,242,189,1) 0%, rgba(182,223,158,1) 50%, rgba(188,252,69,1) 100%);
     height: 100vh;
     width: 100%;
 }
 
 #section_2 h1 {
+    margin: 0;
+    padding-top: 8rem;
     text-align: center;
-    font-size: 5rem;
-    margin-top: 10rem;
+    font-size: 3.5rem;
 }
 
 #section_2 h2 {
-    font-size: 2.5rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .front_product {
-    border: 1px solid black;
-    width: 20rem;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
     height: 25rem;
-    padding: 2rem;
 }
 
-.front_product h3:first-child {
-    font-size: 2rem;
+.front_product div:first-child {
+    height: auto;
+    width: 10.625rem;
+    text-align: center;
 }
 
 .front_product img {
     width: 100%;
 }
 
+.front_product div {
+    margin: 2rem;
+}
+
 .front_product div:nth-child(2) {
     text-align: center;
-    height: 10rem;
     border: 1px solid black;
+}
+
+.front_product h3 {
+    font-size: 2rem;
 }
 
 .front_product div:nth-child(2) * {
