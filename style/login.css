@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Clase para centrar elementos */
+.center {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+main {
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+}
+
+main section:first-child {
+    margin: auto;
+    width: 60rem;
+    height: 50rem;
+    border: 1px solid green;
+}
+
+#imagen_decorativa {
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid yellow;
+    height: 45rem;
+    background-image: url(/img/misc/login.jpg);
+    background-size: cover;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    justify-content: center;
+    border: 1px solid saddlebrown;
+}
+
+
+.form h2 {
+    text-align: center;
+}
+
+
+.form label {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.form input {
+    display: block;
+    width: 20rem;
+    height: 2rem;
+}
+
+.form p {
+    padding-top: 2rem;
+}
+
+
+
