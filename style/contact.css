@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    width: 20rem;
+}
+
+.contact_info {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_info h3{
+    margin-bottom: 3rem;
+}
+
+.map {
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+    height: 30rem;
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.map h4 {
+    text-align: center;
+    font-size: 2rem;
+}

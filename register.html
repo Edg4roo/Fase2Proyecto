@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/template_grid.css">
-    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/header_footer.css">
     <link rel="stylesheet" href="style/register.css">
     <title>Registrate</title>
 </head>
@@ -46,116 +46,161 @@
             <div class="container">
                 <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-8">
+                    <div class="col-8 page_title">
                         <h1>Registrate</h1>
-                        <p>Los campos con * son necesarios. Los que no estan marcados <br>
+                        <p>Los campos con * son necesarios. Los que no estan marcados
                             son solo necesarios si te registras como vendedor o como ambos </p>
                     </div>
                     <div class="col-2">
                     </div>
 
                 </div>
-
-
-                <form action="">
-                    <div class="row">
-                        <div class="col-2">
-                            
+                
+                <div class="row">
+                  <div class="col-2"></div>  
+                  <div class="col-8"><h2>Soy</h2></div>
+                  <div class="col-2"></div>  
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" value="comprador" name="usuario">
+                                <label for="">Comprador</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" value="vendedor" name="usuario">
+                                <label for="">Vendedor</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="radio" value="ambos" name="usuario">
+                                <label for="">Ambos</label>
+                            </div>
+                            <div class="col-1"></div>
                         </div>
-                        <div class="col-3">
-                            <label for="">Soy</label>
-                            <input type="radio" value="comprador">
-                            <label for="">Comprador</label>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <label for="name">Nombre *</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="col-4">
+                                <label for="surname">Apellidos *</label>
+                                <input type="text" name="surname" id="surname">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-3">
-                            <input type="radio" value="vendedor">
-                            <label for="">Vendedor</label>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <label for="company">Nombre de la compañía</label>
+                                <input type="text" name="company" id="company">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-3">
-                            <input type="radio" value="ambos">
-                            <label for="">Ambos</label>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <label for="cif">CIF</label>
+                                <input type="text" name="cif" id="cif">
+                            </div>
+                            <div class="col-4">
+                                <label for="tlf">Num tlf *</label>
+                                <input type="text" name="tlf" id="tlf">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-4">
-                            <label for="name">Nombre *</label>
-                            <input type="text" name="name" id="name">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <label for="dirfiscal">Dirección fiscal *</label>
+                                <input type="text" name="dirfiscal" id="dirfiscal">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-4">
-                            <label for="surname">Apellidos *</label>
-                            <input type="surname" name="surname" id="surname">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <label for="cp">C.P *</label>
+                                <input type="text" name="cp" id="cp">
+                            </div>
+                            <div class="col-4">
+                                <label for="provincia">Provincia *</label>
+                                <select name="provincia" id="provincia"></select>
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <label for="company">Compañía *</label>
-                            <input type="text" name="company" id="company">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-4">
-                            <label for="cif">CIF</label>
-                            <input type="text" name="cif" id="cif">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <label for="password">Contraseña *</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="col-4">
+                                <label for="password">Repetir contraseña *</label>
+                                <input type="password" id="passwordb" name="passwordb">
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-4">
-                            <label for="tlf">Num tlf</label>
-                            <input type="text" name="tlf" id="tlf">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <button type="button">Registrate</button>
+                            </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <label for="dirfiscal">Dirección fiscal</label>
-                            <input type="text" name="dirfiscal" id="dirfiscal">
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-4">
-                            <label for="cp">C.P *</label>
-                            <input type="text" name="cp" id="cp">
-                        </div>
-                        <div class="col-4">
-                            <label for="provincia">Provincia</label>
-                            <select name="provincia" id="provincia"></select>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <label for="email">E-mail *</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-4">
-                            <label for="password">Contraseña *</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div class="col-4">
-                            <label for="password">Repetir contraseña *</label>
-                            <input type="passwordb" id="passwordb" name="passwordb">
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-
-
-                </form>
+                        
+                    </form>
+                </div>
+                
             </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>Verdularia</h4>
+                    <p>C/Inventada, 4,<br>
+                        Oliva, Valencia (46780)</p>
+                </div>
+                <div class="col-3">
+                    <h4>Contacto</h4>
+                    <li>
+                        <ul>Num. tlf: 000 000 000</ul>
+                        <ul>verdularia@gmail.com</ul>
+                        <a href=""><img src="/img/icons/twitter_icon.png" alt="twitter"></a>
+                        <a href=""><img src="/img/icons/instagram_icon.png" alt="instagram"></a>
+                        <a href=""><img src="/img/icons/facebook_icon.png" alt="facebook"></a>
+                        <a href=""><img src="/img/icons/linkedin_icon.png" alt="linkedin"></a>
+                    </li>
+                </div>
+                <div class="col-3">
+                    <h4>Legal</h4>
+                    <ul>
+                        <a href=""><li>Política de privacidad</li></a>
+                        <a href=""><li>Términos y condiciones</li></a>
+                        <a href=""><li>Política de cookies</li></a>
+                    </ul>
+                </div>
+                <div class="col-3 logos">
+                    <img src="/img/icons/organic_logo.png" alt="">
+                    <img src="/img/icons/sustainable_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

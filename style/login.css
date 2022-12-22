@@ -16,12 +16,9 @@ header {
     justify-content: center;
 }
 
-
-
 main {
     height: 100vh;
     border: 1px solid red;
-    display: flex;
 }
 
 main section:first-child {
@@ -52,23 +49,9 @@ main section:first-child {
     text-align: center;
 }
 
-
-.txt_input_label {
-    margin-top: 3.5rem;
-    font-size: 1.5rem;
-    display: block;
-}
-
-.form label+input {
-    display: block;
-    width: 20rem;
-    height: 2rem;
-}
-
 input[type=checkbox]{
     margin-top: 3rem;
     display: inline-block;
-
 }
 
 .form p {
