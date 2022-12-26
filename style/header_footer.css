@@ -68,6 +68,12 @@ header ul li a {
     margin-right: 5rem;
 }
 
+
+/* Main */
+main {
+    margin-bottom: 5rem;
+}
+
 /* Titulo de la página */
 .page_title {
     margin-top: 2rem;
@@ -95,6 +101,9 @@ header ul li a {
 
 /* Footer */
 footer {
+    width: 100%;
+    bottom: 0;
+    height: auto;
     display: block;
     background-color: beige;
 }
