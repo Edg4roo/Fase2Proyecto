@@ -3,15 +3,28 @@ header {
     border-bottom: 1px solid black;
 }
 
+.blog_pages {
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+
+.blog_pages a {
+	font-size: 2rem;
+	margin: 2rem;
+}
+
 .post {
     border: 1px solid black;
 	border-radius: 30px;
 	align-items: center;
 	justify-content: center;
-	height: 20rem;
+	height: 22rem;
+	margin-bottom: 2rem;
 }
 
 .post_img img {
+	border-radius: 20px;
 	margin-top: 1rem;
 	width: 100%;
 	height: auto;
@@ -23,7 +36,6 @@ header {
 
 .post p {
 	margin-top: 1rem;
-	margin-bottom: 1rem;
 }
 
 .paginacion {
