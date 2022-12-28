@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/template_grid.css">
+    <link rel="stylesheet" href="style/header_footer.css">
+    <link rel="stylesheet" href="style/orders.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+    <header>
+        <div class="container overlay">
+            <div class="row">
+                <div class="col-6" id="header_icon">
+                    <img src="/img/icons/icon.png" alt="verdularia">
+                </div>
+                <div class="col-6">
+                    <div id="search_block">
+                        <img src="/img/icons/search.png" alt="lupa">
+                        <input type="text" name="search" id="search">
+                        <img src="/img/icons/user.png" alt="user">
+                        <img src="/img/icons/shopping_kart.png" alt="user">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-12">
+                <ul>
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Conocenos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="blog_recipes1.html">Blog</a></li>
+                    <li><a href="video1.html">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 page_title">
+                    <h1>Pedidos</h1>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-3 filter">
+                    <h3>Filtros</h3>
+                    <div class="filter-box">
+                        <p>Filtrar por:</p>
+                        <div class="input-box">
+                            <input type="radio" name="filter" value="date" id="date">
+                            <label for="date">fecha</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" name="filter" value="num" id="num">
+                            <label for="date">número de pedido</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" name="filter" value="client" id="client">
+                            <label for="date">cliente</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" name="filter" value="" id="location">
+                            <label for="date">localización</label>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <p>Ordenar de forma:</p>
+                        <div class="input-box">
+                            <input type="radio" name="order" value="asc" id="asc">
+                            <label for="asc">Ascendente</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="radio" name="order" value="desc" id="desc">
+                            <label for="asc">Descendente</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8 orders">
+                    <p>Filtrado por: <span>sin filtro</span></p>
+                    <div class="order-box">
+                        <div class="order">
+                            <table>
+                                <thead>
+                                    <th>Num. pedido</th>
+                                    <th>Total</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>Ubicación</th>
+                                </thead>
+                                <tbody>
+                                    <tr class="order_info">
+                                        <td>02062</td>
+                                        <td>23€</td>
+                                        <td><a href="">Jose Martínez</a></td>
+                                        <td>01/08/2021</span></td>
+                                        <td>Pego, Alicante</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="order_expand">
+                                <td><a href="">Ver más</a></td>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <table>
+                                <thead>
+                                    <th>Num. pedido</th>
+                                    <th>Total</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>Ubicación</th>
+                                </thead>
+                                <tbody>
+                                    <tr class="order_info">
+                                        <td>02022</td>
+                                        <td>20€</td>
+                                        <td><a href="">Lucía Perez</a></td>
+                                        <td>06/09/2021</span></td>
+                                        <td>Oliva, Valencia</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="order_expand">
+                                <td><a href="">Ver más</a></td>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <table>
+                                <thead>
+                                    <th>Num. pedido</th>
+                                    <th>Total</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>Ubicación</th>
+                                </thead>
+                                <tbody>
+                                    <tr class="order_info">
+                                        <td>02097</td>
+                                        <td>14€</td>
+                                        <td><a href="">Jose Ramón Gutierrez</a></td>
+                                        <td>09/09/2021</span></td>
+                                        <td>Pego, Valencia</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="order_expand">
+                                <td><a href="">Ver más</a></td>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>Verdularia</h4>
+                    <p>C/Inventada, 4,<br>
+                        Oliva, Valencia (46780)</p>
+                </div>
+                <div class="col-3">
+                    <h4>Contacto</h4>
+                    <li>
+                        <ul>Num. tlf: 000 000 000</ul>
+                        <ul>verdularia@gmail.com</ul>
+                        <a href=""><img src="/img/icons/twitter_icon.png" alt="twitter"></a>
+                        <a href=""><img src="/img/icons/instagram_icon.png" alt="instagram"></a>
+                        <a href=""><img src="/img/icons/facebook_icon.png" alt="facebook"></a>
+                        <a href=""><img src="/img/icons/linkedin_icon.png" alt="linkedin"></a>
+                    </li>
+                </div>
+                <div class="col-3">
+                    <h4>Legal</h4>
+                    <ul>
+                        <a href="">
+                            <li>Política de privacidad</li>
+                        </a>
+                        <a href="">
+                            <li>Términos y condiciones</li>
+                        </a>
+                        <a href="">
+                            <li>Política de cookies</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-3 logos">
+                    <img src="/img/icons/organic_logo.png" alt="">
+                    <img src="/img/icons/sustainable_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
