@@ -1,7 +1,5 @@
 /* Fuentes */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
     margin: 0;
@@ -56,7 +54,6 @@
     margin: 1rem;
     width: 25rem;
     height: 7.5rem;
-    border: 1px solid transparent;
     border-radius: 10px;
     background-image: url(/img/background/front_products_btn.jpg);
 }
@@ -84,20 +81,31 @@
     padding-top: 8rem;
     text-align: center;
     font-size: 3.5rem;
+    color:#23201B;
+    font-family: 'Satisfy', cursive;
 }
 
-#section_2 h2 {
-    margin-top: 5rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.product_line {
+    margin-top: 6rem;
+}
+
+.product_line h2 {
+    font-size: 2rem;
+    color:#23201B;
+    font-family: 'Satisfy', cursive;
+}
+
+.product_line hr {
+    margin-bottom: 2rem;
 }
 
 .front_product {
-    background-color: #fff;
-    border: 1px solid transparent;
+    padding-top: 1rem;
     border-radius: 50px;
     height: 25rem;
     text-align: center;
+    background-color: #E7F2D5;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .front_product div:first-child {
@@ -109,11 +117,11 @@
 
 .front_product div {
     margin: 2rem;
+    
 }
 
 .front_product div:nth-child(2) {
     text-align: center;
-    border: 1px solid black;
 }
 
 .front_product h3 {

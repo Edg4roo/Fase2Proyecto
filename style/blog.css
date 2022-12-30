@@ -18,16 +18,21 @@ header {
 	justify-content: center;
 }
 
+.post:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}
+
 .post {
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 	width: 20rem;
-    border: 1px solid black;
 	border-radius: 30px;
 	align-items: center;
 	justify-content: center;
 	height: 22.18rem;
 	margin-bottom: 2rem;
+	background-color: #E7F2D5;
 }
 
 .post_img img {

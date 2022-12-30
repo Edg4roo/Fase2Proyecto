@@ -3,58 +3,51 @@ header {
     border-bottom: 1px solid black;
 }
 
-/* Clase para centrar elementos */
-.center {    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 main {
-    height: 100vh;
-    border: 1px solid red;
     display: flex;
 }
 
 main section:first-child {
     margin: auto;
     width: 60rem;
-    border: 1px solid green;
 }
 
 #imagen_decorativa {
     margin: 0 auto;
     align-self: center;
-    border: 1px solid yellow;
-    height: 45rem;
+    height: 30rem;
     background-image: url(/img/misc/login.jpg);
     background-size: cover;
+    border-radius: 10px;
+    
 }
 
 .form {
+    display: flex;
     width: 100%;
     margin: auto;
-    padding-top: 1rem;
-    justify-content: center;
-    border: 1px solid saddlebrown;
 }
 
+.form label, p {
+    font-family: 'Quicksand', sans-serif;
+}
 
 .form h2 {
     text-align: center;
 }
 
+.form input {
+    border-radius: 30px;
+}
+
 input[type=checkbox]{
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: inline-block;
 }
 
 .form p {
     margin-top: 1rem;
-}
-
-.form form+p {
-    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .form button {

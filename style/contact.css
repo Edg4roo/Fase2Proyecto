@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +23,23 @@ textarea {
 
 .contact_info h3{
     margin-bottom: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact_info p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input_box label {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input_box input, textarea {
+    border-radius: 30px;
 }
 
 .map {
