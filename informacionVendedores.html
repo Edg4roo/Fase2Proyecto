@@ -6,39 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/template_grid.css">
-    <link rel="stylesheet" href="style/header_footer.css">
+    <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/informacionVendedores.css">
     <title>Información para vendedores</title>
 </head>
 <body>
     <header>
-        <div class="container overlay">
+        <div class="container ">
             <div class="row">
-                <div class="col-12 header_icon">
-                    <img src="/img/icons/icon.png" alt="verdularia">
+                <div class="col-12 phone_header">
+                    <div class='header_icon'>
+                        <a href="index.html"><img id="phone_header_icon" src="/img/icons/icon_no_text.png" alt=""></a>
+                    </div>
+                    <div class="user_block">
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/phone_menu.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="">Comprar</a>
+                                <div class="submenu">
+                                    <a href="">Gestiones <img src="/img/icons/arrow_down_phone.png" alt=""></a>
+                                    <div class="submenu_children">
+                                        <a href="informacionVendedores.html">Información para vendedores</a>
+                                        <a href="orders.html">Pedidos</a>
+                                    </div>
+                                </div>
+                                <a href="">Conócenos</a>
+                                <a href="contact.html">Contacto</a>
+                                <a href="blog_recipes1.html">Blog</a>
+                                <a href="video1.html">Videos</a>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/user_icon.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="login.html">Iniciar sesión</a>
+                                <a href="register.html">Regístrate</a>
+                            </div>
+                        </div>
+                        <img src="/img/icons/shooping_bag_icon.png" alt="">
+                    </div>
+
                 </div>
-                <div class="col-6">
-                    <div id="search_block">
-                        <img src="/img/icons/search.png" alt="lupa">
+            </div>
+        </div>
+
+        <div class="normal_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 header_icon">
+                        <a href="index.html"><img src="/img/icons/icon.png" alt="verdularia"></a>
+                    </div>
+                    <div class="col-4 search_block">
+                        <img src="/img/icons/search_icon.png" alt="lupa">
                         <input type="text" name="search" id="search">
-                        <img src="/img/icons/user.png" alt="user">
-                        <img src="/img/icons/shopping_kart.png" alt="user">
+                    </div>
+                    <div class="col-4 user_block">
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/user_icon.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="login.html">Iniciar sesión</a>
+                                <a href="register.html">Regístrate</a>
+                            </div>
+                        </div>
+                        <img src="/img/icons/shooping_bag_icon.png" alt="user">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="col-12">
-                <ul>
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Gestiones</a></li>
-                    <li><a href="">Conocenos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="blog_recipes1.html">Blog</a></li>
-                    <li><a href="video1.html">Videos</a></li>
-                </ul>
+            <div class="container-fluid">
+                <div class="col-12">
+                    <nav>
+                        <ul>
+                            <li><a href="">Comprar</a></li>
+                            <div class="dropdown">
+                                <li><a href="">Gestiones <img src="/img/icons/arrow_down.png" alt=""></a></li>
+                                <div class="dropdown_child">
+                                    <a href="informacionVendedores.html">Información para vendedores</a>
+                                    <a href="orders.html">Pedidos</a>
+                                </div>
+                            </div>
+
+                            <li><a href="">Conocenos</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="blog_recipes1.html">Blog</a></li>
+                            <li><a href="video1.html">Videos</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
+
     </header>
     <main>
         <section>
@@ -63,9 +123,9 @@
                     <div class="col-8 info_menu">
                         <h2>Que podemos encontrar aqui</h2>
                         <ul>
-                            <li><a href="">Información general</a></li>
-                            <li><a href="">Como gestionar tus pedidos</a></li>
-                            <li><a href="">Validar tus datos de forma correcta</a></li>
+                            <li><a href="#info_general">Información general</a></li>
+                            <li><a href="#como_gestionar">Como gestionar tus pedidos</a></li>
+                            <li><a href="#validar_tus_datos">Validar tus datos de forma correcta</a></li>
                         </ul>
                     </div>
                     <div class="col-2"></div>
@@ -73,7 +133,7 @@
                 <div class="row text_block">
                     <div class="col-2"></div>
                     <div class="col-8 text">
-                        <h3>Información general</h3>
+                        <h3 id="info_general">Información general</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, at minima repudiandae sit, commodi cumque eos voluptatibus tenetur consectetur dolorem numquam ducimus! Nesciunt fugiat iste aliquam nostrum distinctio reiciendis perspiciatis.</p>
                     </div>
                     <div class="col-2"></div>
@@ -86,7 +146,7 @@
                 <div class="row text_block">
                     <div class="col-2"></div>
                     <div class="col-8 text">
-                        <h3>Como gestionar tus pedidos</h3>
+                        <h3 id="como_gestionar">Como gestionar tus pedidos</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, at minima repudiandae sit, commodi cumque eos voluptatibus tenetur consectetur dolorem numquam ducimus! Nesciunt fugiat iste aliquam nostrum distinctio reiciendis perspiciatis.</p>
                     </div>
                     <div class="col-2"></div>
@@ -94,7 +154,7 @@
                 <div class="row text_block">
                     <div class="col-2"></div>
                     <div class="col-8 text">
-                        <h3>Validar tus datos de forma correcta</h3>
+                        <h3 id="validar_tus_datos">Validar tus datos de forma correcta</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, at minima repudiandae sit, commodi cumque eos voluptatibus tenetur consectetur dolorem numquam ducimus! Nesciunt fugiat iste aliquam nostrum distinctio reiciendis perspiciatis.</p>
                     </div>
                     <div class="col-2"></div>
@@ -112,24 +172,24 @@
                 </div>
                 <div class="col-3">
                     <h4>Contacto</h4>
-                    <li>
-                        <ul>Num. tlf: 000 000 000</ul>
-                        <ul>verdularia@gmail.com</ul>
+                    <ul>
+                        <li>Num. tlf: 000 000 000</li>
+                        <li>verdularia@gmail.com</li>
                         <a href=""><img src="/img/icons/twitter_icon.png" alt="twitter"></a>
                         <a href=""><img src="/img/icons/instagram_icon.png" alt="instagram"></a>
                         <a href=""><img src="/img/icons/facebook_icon.png" alt="facebook"></a>
                         <a href=""><img src="/img/icons/linkedin_icon.png" alt="linkedin"></a>
-                    </li>
+                    </ul>
                 </div>
                 <div class="col-3">
                     <h4>Legal</h4>
                     <ul>
-                        <a href=""><li>Política de privacidad</li></a>
-                        <a href=""><li>Términos y condiciones</li></a>
-                        <a href=""><li>Política de cookies</li></a>
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href=""> Términos y condiciones</a></li>
+                        <li><a href=""> Política de cookies</a></li>
                     </ul>
                 </div>
-                <div class="col-3 logos">
+                <div class="col-3 footer_logos">
                     <img src="/img/icons/organic_logo.png" alt="">
                     <img src="/img/icons/sustainable_logo.png" alt="">
                 </div>

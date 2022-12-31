@@ -9,6 +9,10 @@ header {
     border-bottom: 1px solid black;
 }
 
+main {
+    font-family: 'Quicksand', sans-serif;
+}
+
 h2 {
     padding-top: 1rem;
     padding-bottom: 0.5rem;

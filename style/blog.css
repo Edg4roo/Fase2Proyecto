@@ -1,6 +1,6 @@
 header {
     position: relative;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid transparent;
 }
 
 @media screen and (max-width:800px) {
@@ -14,12 +14,25 @@ header {
 		justify-content: center;
 		align-items: center;
 	}
+
+	.blog_pages_title {
+		margin: auto;
+		padding: auto;
+	}
+
+}
+
+@media screen and (min-width:800px) {
+
+	.blog_pages {
+		margin-bottom: 4rem;
+	}
+
 }
 
 .blog_pages {
 	text-align: center;
 	justify-content: center;
-	margin-bottom: 5rem;
 }
 
 .blog_pages a {
@@ -34,6 +47,21 @@ header {
 
 .blog_pages a:hover {
 	color: #A69B03;
+}
+
+.blog_page_title {
+	height: 5rem;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 60rem;
+}
+
+.blog_page_title h2 {
+	font-size: 3rem;
+	color: white;
+	text-shadow:  0.1em 0.1em 0.2em black;
 }
 
 .post_row {

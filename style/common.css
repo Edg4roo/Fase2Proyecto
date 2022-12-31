@@ -32,11 +32,30 @@
         right: 10px;
     }
 
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer h4 {
+        margin-top: 1rem;
+    }
+
+    .footer_logos {
+        margin-top: 1rem;
+    }
+
 }
 
 @media screen and (min-width:800px) {
     .phone_header {
         display: none;
+    }
+
+    footer h4 {
+        margin-bottom: 1rem;
     }
 }
 
@@ -103,8 +122,6 @@ header ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 .search_block {
     text-align: center;
     display: flex;
@@ -128,8 +145,15 @@ header ul li a {
     margin-left: 0.5rem;
 }
 
+/* Menu desplegable */
+
 .dropdown {
     display: inline-block;
+}
+
+ul .dropdown img {
+    display: inline-block;
+    width: 1rem;
 }
 
 .dropdown_child {
@@ -146,6 +170,7 @@ header ul li a {
     font-family: 'Quicksand', sans-serif;
     color: white;
     text-align: left;
+    font-weight: bold;
 }
 
 .dropdown_child a:hover {
@@ -155,6 +180,29 @@ header ul li a {
 .dropdown:hover .dropdown_child {
     display: block;
     position: fixed;
+}
+
+/* Submenu desplegable */
+.submenu {
+    display: inline-block;
+}
+
+.submenu img {
+    width: 0.7rem;
+}
+
+.submenu:hover .submenu_children {
+    display: block;
+}
+
+.submenu_children {
+    display: none;
+    background-color: #61460F;
+    border-radius: 30px;
+}
+
+.submenu_children a:hover {
+    color: orange;
 }
 
 .user_btn {
@@ -284,21 +332,32 @@ main button:active {
 
 /* Footer */
 footer {
+    padding-top: 1rem;
     width: 100%;
     bottom: 0;
-    height: auto;
+    height: 100%;
     display: block;
-    background-color: beige;
+    background-color: #23201B;;
     font-family: 'Quicksand', sans-serif;
+    color: white;
+    border-radius:  90% 90% 0 0 / 30%;
 }
 
-footer a {
+footer h4 {
+    color: #61460F;
+}
+
+footer p, ul li {
+    color: #A69B03;
+}
+
+footer ul li a {
     text-decoration: none;
     color: blue;
 }
 
-footer h4 {
-    margin-bottom: 1rem;
+footer ul li a:visited {
+    color: orangered;
 }
 
 footer li {
@@ -309,13 +368,13 @@ footer a>img {
     width: 2rem;
 }
 
-.logos {
+.footer_logos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logos img {
+.footer_logos img {
     width: 5rem;
     margin-right: 2rem;
 }

@@ -3,13 +3,25 @@ header {
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width:800px) {
+    .filter {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .filter {
+        position: sticky;
+        top: 200px;
+    }
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
 
 .filter {
-    position: sticky;
-    top: 200px;
     background-color: white;
     height: fit-content;
     padding: 0;
@@ -36,7 +48,7 @@ body {
     float: right;
 }
 
-.orders p  {
+.orders p {
     font-size: 1.2rem;
 }
 
