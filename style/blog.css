@@ -3,6 +3,14 @@ header {
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width:800px) {
+
+	.blog_pages div{
+		margin-bottom: 4rem;
+	}
+
+}
+
 .blog_pages {
 	text-align: center;
 	justify-content: center;
@@ -10,8 +18,17 @@ header {
 }
 
 .blog_pages a {
+	padding: 1rem;
+	border-radius: 30px;
+	background-color:#61460F ;
+	color: white ;
+	text-decoration: none;
 	font-size: 2rem;
 	margin: 2rem;
+}
+
+.blog_pages a:hover {
+	color: #A69B03;
 }
 
 .post_row {
@@ -33,6 +50,7 @@ header {
 	height: 22.18rem;
 	margin-bottom: 2rem;
 	background-color: #E7F2D5;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .post_img img {
@@ -49,36 +67,4 @@ header {
 .post p {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
-}
-
-.paginacion {
-	margin:20px 0;
-}
-
-.paginacion ul {
-	list-style:none;
-	text-align: center;
-}
-
-.paginacion ul li {
-	display:inline-block;
-	margin-right:10px;
-}
-
-.paginacion ul li a {
-	display:block;
-	padding:10px 20px;
-	color:#fff;
-	background:#024959;
-	text-decoration: none;
-    border-radius: 100%;
-}
-
-.paginacion ul li a:hover {
-	background:#037E8C;
-}
-
-.paginacion ul li .active {
-	background:#037E8C;
-	font-weight:bold;
 }

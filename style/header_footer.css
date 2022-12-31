@@ -8,23 +8,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+/* Responsive */
+
+@media screen and (max-width:800px) {
+
+    .normal_header {
+        display: none;
+    }
+
+    .phone_header {
+        display: flex;
+        height: 5rem;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .user_block {
+        position: absolute;
+        width: auto;
+        align-items: center;
+        right: 10px;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .phone_header {
+        display: none;
+    }
+}
+
+.phone_header_icon {
+    height: 100%;
+    text-align: center;
+}
+
+#phone_header_icon {
+    width: 3.5rem;
+}
+
+
+
+.other_menu {
+    display: none;
+}
+
 /* Header */
 
 header {
     z-index: 99999999;
     position: fixed;
     width: 100%;
-	border-radius: 0 0 90% 90% / 30%;
+    border-radius: 0 0 90% 90% / 30%;
     background-color: #23201B;
 }
 
-#header_icon {
+.header_icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
-#header_icon img {
+.header_icon img {
     width: 10rem;
 }
 
@@ -55,6 +103,8 @@ header ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .search_block {
     text-align: center;
     display: flex;
@@ -74,7 +124,42 @@ header ul li a {
 
 .user_block img {
     width: 2rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown_child {
+    display: none;
+    border-radius: 20px;
+    position: fixed;
+    background-color: #A69B03;
+}
+
+.dropdown_child a {
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.dropdown_child a:hover {
+    color: #23201B;
+}
+
+.dropdown:hover .dropdown_child {
+    display: block;
+    position: fixed;
+}
+
+.user_btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .search_block input {
@@ -84,9 +169,8 @@ header ul li a {
 }
 
 /* Body */
-
 body {
-    background-color: #CCCFD9 ;
+    background-color: #CCCFD9;
 }
 
 /* Main */
@@ -116,10 +200,86 @@ main {
     font-size: 1.5rem;
 }
 
-.input_box input{
+.input_box input {
     display: block;
     width: 20rem;
     height: 2rem;
+}
+
+/* Paginación */
+.paginacion {
+    margin: 20px 0;
+}
+
+.paginacion ul {
+    list-style: none;
+    text-align: center;
+}
+
+.paginacion ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.paginacion ul li a {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    background-color: #23201B;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+
+.paginacion ul li a:hover {
+    background-color: #A69B03;
+}
+
+.paginacion ul li .active {
+    background-color: #A69B03;
+    font-weight: bold;
+}
+
+/* Botones */
+main button {
+    appearance: none;
+    background-color: #23201B;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1rem;
+    min-height: 60px;
+    min-width: 0;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10rem;
+    will-change: transform;
+}
+
+
+main button:disabled {
+    pointer-events: none;
+}
+
+main button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+main button:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 /* Footer */
@@ -129,6 +289,7 @@ footer {
     height: auto;
     display: block;
     background-color: beige;
+    font-family: 'Quicksand', sans-serif;
 }
 
 footer a {
@@ -148,7 +309,7 @@ footer a>img {
     width: 2rem;
 }
 
-.logos {    
+.logos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,4 +319,3 @@ footer a>img {
     width: 5rem;
     margin-right: 2rem;
 }
-

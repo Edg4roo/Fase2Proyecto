@@ -132,9 +132,11 @@ body {
 
 @media only screen and (max-width: 767px) {
   /* For mobile phones: */
+
   .row {
     flex-direction: column;
   }
+
   .container {
     width: 100%;
   }

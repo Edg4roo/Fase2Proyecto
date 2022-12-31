@@ -26,7 +26,7 @@ header {
 
 .info_menu h2 {
     text-align: center;
-    background: blue;
+    background-color: #23201B;
 }
 
 .info_menu ul {
@@ -39,6 +39,7 @@ header {
 }
 
 .info_menu li a {
+    text-decoration: none;
     font-size: 1.3rem;
     color: blue;
 }

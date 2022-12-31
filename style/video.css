@@ -6,8 +6,9 @@ header {
 .video {
 	padding: 1rem;
     margin-top: 3rem;
-    border: 1px solid salmon;
+	background-color: #E7F2D5;
 	border-radius: 30px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .media {
@@ -31,36 +32,4 @@ header {
 
 .descripcion h2, p {
 	margin-bottom: 2rem;
-}
-
-.paginacion {
-	margin:20px 0;
-}
-
-.paginacion ul {
-	list-style:none;
-	text-align: center;
-}
-
-.paginacion ul li {
-	display:inline-block;
-	margin-right:10px;
-}
-
-.paginacion ul li a {
-	display:block;
-	padding:10px 20px;
-	color:#fff;
-	background:#024959;
-	text-decoration: none;
-    border-radius: 100%;
-}
-
-.paginacion ul li a:hover {
-	background:#037E8C;
-}
-
-.paginacion ul li .active {
-	background:#037E8C;
-	font-weight:bold;
 }

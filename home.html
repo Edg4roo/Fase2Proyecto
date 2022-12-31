@@ -16,32 +16,72 @@
 
 <body>
     <header>
-        <div class="container overlay">
+        <div class="container ">
             <div class="row">
-                <div class="col-4" id="header_icon">
-                    <img src="/img/icons/icon.png" alt="verdularia">
-                </div>
-                <div class="col-4 search_block">
-                    <img src="/img/icons/search_icon.png" alt="lupa">
-                    <input type="text" name="search" id="search">
-                </div>
-                <div class="col-4 user_block">
-                    <img src="/img/icons/user_icon.png" alt="user">
-                    <img src="/img/icons/shooping_bag_icon.png" alt="user">
+                <div class="col-12 phone_header">
+                    <div class='header_icon'>
+                        <img id="phone_header_icon" src="/img/icons/icon_no_text.png" alt="">
+                    </div>
+                    <div class="user_block">
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/phone_menu.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="login.html">Iniciar sesión</a>
+                                <a href="register.html">Regístrate</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/user_icon.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="login.html">Iniciar sesión</a>
+                                <a href="register.html">Regístrate</a>
+                            </div>
+                        </div>
+                        <img src="/img/icons/shooping_bag_icon.png" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="col-12">
-                <ul>
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Conocenos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="blog_recipes1.html">Blog</a></li>
-                    <li><a href="">Videos</a></li>
-                </ul>
+
+        <div class="normal_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 header_icon">
+                        <img src="/img/icons/icon.png" alt="verdularia">
+                    </div>
+                    <div class="col-4 search_block">
+                        <img src="/img/icons/search_icon.png" alt="lupa">
+                        <input type="text" name="search" id="search">
+                    </div>
+                    <div class="col-4 user_block">
+                        <div class="dropdown">
+                            <button type="button" class="user_btn"><img src="/img/icons/user_icon.png"
+                                    alt="user"></button>
+                            <div class="dropdown_child">
+                                <a href="login.html">Iniciar sesión</a>
+                                <a href="register.html">Regístrate</a>
+                            </div>
+                        </div>
+                        <img src="/img/icons/shooping_bag_icon.png" alt="user">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-12">
+                    <ul>
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Conocenos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="blog_recipes1.html">Blog</a></li>
+                        <li><a href="">Videos</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </header>
     <main>
         <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50" />
@@ -51,29 +91,29 @@
         <section id="section_1">
             <div class="container-fluid" id="main_menu">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/banana.webp" alt="frutas">
                         <h2>Frutas</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/lechuga.png" alt="verduras">
                         <h2>Verduras</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/huevo.png" alt="frescos">
                         <h2>Frescos</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/pan.png" alt="obrador">
                         <h2>Obrador</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/queso.png" alt="quesos">
                         <h2>Quesos</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 main_menu_block">
                         <img src="img/misc/mermelada.png" alt="frutas">
                         <h2>Otros</h2>
                     </div>
