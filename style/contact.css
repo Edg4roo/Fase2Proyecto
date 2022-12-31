@@ -6,6 +6,22 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width:800px) {
+
+
+    .map {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+
+    .map {
+        margin-bottom: 10rem;
+    }
+}
+
 header {
     position: relative;
     border-bottom: 1px solid black;
@@ -46,7 +62,6 @@ textarea {
 
 .map {
     margin-top: 3rem;
-    margin-bottom: 15rem;
     height: 30rem;
     width: 100%;
 }

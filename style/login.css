@@ -3,6 +3,12 @@ header {
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width:800px) {
+    #imagen_decorativa {
+        display: none;
+    }
+}
+
 main {
     display: flex;
 }
@@ -48,6 +54,11 @@ input[type=checkbox]{
 .form p {
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.form a {
+    text-decoration: none;
+    color: blue;
 }
 
 .form button {

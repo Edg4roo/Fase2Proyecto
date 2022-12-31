@@ -16,13 +16,13 @@
         display: none;
     }
 
+    header {
+        position: fixed;
+    }
+
     .phone_header {
         display: flex;
         height: 5rem;
-    }
-
-    header {
-        position: relative;
     }
 
     .user_block {
@@ -145,6 +145,7 @@ header ul li a {
     display: block;
     font-family: 'Quicksand', sans-serif;
     color: white;
+    text-align: left;
 }
 
 .dropdown_child a:hover {
@@ -229,7 +230,6 @@ main {
     background-color: #23201B;
     text-decoration: none;
     border-radius: 50%;
-    
 }
 
 .paginacion ul li a:hover {

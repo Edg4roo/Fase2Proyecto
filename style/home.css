@@ -8,8 +8,6 @@
 }
 
 @media screen and (max-width:800px) {
-
-
     .front_product {
         display: flex;
         flex-direction: column;
@@ -19,7 +17,33 @@
         width: 75%;
     }
 
-    #main_menu div  {
+    header {
+        position: fixed;
+    }
+
+    #section_1 {
+        position: relative;
+        top: 4.2rem;
+        height: auto;
+        background-color: #E7F2D5;
+    }
+
+    #section_2 {
+        position: relative;
+        height: auto;
+    }
+
+    #section_2 h1 {
+        padding: 0;
+    }
+
+    #video_background {
+        display: none;
+    }
+
+    #main_menu div {
+        margin: 0;
+        margin-bottom: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,6 +100,8 @@
     height: 7.5rem;
     border-radius: 10px;
     background-image: url(/img/background/front_products_btn.jpg);
+    justify-content: center;
+    align-items: center;
 }
 
 .main_menu_block img {
@@ -86,8 +112,7 @@
 .main_menu_block h2 {
     align-self: center;
     font-size: 3rem;
-    margin-left: 2rem;
-    color: white;   
+    color: white;
 }
 
 .main_menu_block:hover {

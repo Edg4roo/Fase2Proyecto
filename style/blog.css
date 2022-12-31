@@ -9,6 +9,11 @@ header {
 		margin-bottom: 4rem;
 	}
 
+	.post_row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .blog_pages {
