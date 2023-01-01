@@ -1,12 +1,6 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @media screen and (max-width:800px) {
     .front_product {
         display: flex;
@@ -18,27 +12,29 @@
     }
 
     header {
-        position: fixed;
-    }
-
-    #section_1 {
         position: relative;
-        top: 4.2rem;
-        height: auto;
-        background-color: #E7F2D5;
     }
 
     #section_2 {
         position: relative;
         height: auto;
+        background-color: #cccfd9;
     }
 
     #section_2 h1 {
-        padding: 0;
+        margin: 0;
     }
 
     #video_background {
         display: none;
+    }
+
+    #main_menu {
+        top: 5rem;
+        height: 100%;
+        background-image: url(/img/background/phone_background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #main_menu div {
@@ -47,6 +43,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .main_menu_block img {
+        width: 9.7rem;
+        height: auto;
+    }
+
+    .main_menu_block h2 {
+        font-size: 2rem;
     }
 }
 
@@ -130,11 +135,12 @@
 
 #section_2 {
     width: 100%;
+    height: auto;
 }
 
 #section_2 h1 {
     margin: 0;
-    padding-top: 8rem;
+    margin-top: 8rem;
     text-align: center;
     font-size: 3.5rem;
     color: #23201B;
@@ -159,6 +165,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     border-radius: 50px;
     height: auto;
