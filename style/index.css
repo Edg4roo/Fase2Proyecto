@@ -30,7 +30,7 @@
     }
 
     #main_menu {
-        top: 5rem;
+        padding-top: 10rem;
         height: 100%;
         background-image: url(/img/background/phone_background.jpg);
         background-repeat: no-repeat;
