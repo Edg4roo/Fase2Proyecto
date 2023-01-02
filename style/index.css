@@ -29,9 +29,15 @@
         display: none;
     }
 
+    #section_1 {
+        height: fit-content;
+    }
+
     #main_menu {
-        padding-top: 10rem;
-        height: 100%;
+        top: 3rem;
+        padding-top: 6rem;
+        position: absolute;
+        height: fit-content;
         background-image: url(/img/background/phone_background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
