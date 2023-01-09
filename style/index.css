@@ -11,13 +11,9 @@
         width: 75%;
     }
 
-    header {
-        position: relative;
-    }
 
     #section_2 {
-        position: relative;
-        height: auto;
+        /*position: relative;*/
         background-color: #cccfd9;
     }
 
@@ -30,13 +26,12 @@
     }
 
     #section_1 {
-        height: fit-content;
+        height: 100%;
     }
 
     #main_menu {
         top: 3rem;
         padding-top: 6rem;
-        position: absolute;
         height: fit-content;
         background-image: url(/img/background/phone_background.jpg);
         background-repeat: no-repeat;
