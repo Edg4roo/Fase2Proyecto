@@ -66,78 +66,286 @@
             <div class="row my-5">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <h1>Comprar</h1>
+                    <h1>Pedidos</h1>
                 </div>
                 <div class="col-2"></div>
             </div>
             <div class="row">
-                <div class="col-2">
-                <div class="col-2">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-3">
+                    <div class="card" style="width: 15rem;">
                         <div class="card-header">
                             Catálogo
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    Frutas
-                                </button>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Frutas
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
                                         <ul class="list-group">
-                                            <li class="list-group-item">Manzanas</li>
-                                            <li class="list-group-item">Peras</li>
-                                            <li class="list-group-item">Plátanos</li>
-                                            <li class="list-group-item">Melones</li>
-                                          </ul>
+                                            <a class="text-decoration-none" href="">
+                                                <li class="list-group-item text-decoration-none">Plátanos</li>
+                                            </a>
+                                            <a href="" class="text-decoration-none">
+                                                <li class="list-group-item">Manzanas</li>
+                                            </a>
+                                            <a href="" class="text-decoration-none">
+                                                <li class="list-group-item">Peras</li>
+                                            </a>
+                                            <a href="" class="text-decoration-none">
+                                                <li class="list-group-item">Naranjas</li>
+                                            </a>
+                                        </ul>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    Verduras
-                                </button>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">Tomates</li>
-                                            <li class="list-group-item">Berenjenas</li>
-                                            <li class="list-group-item">Lechugas</li>
-                                            <li class="list-group-item">Zanahorias</li>
-                                          </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                Obrador
-                            </button>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Manzanas</li>
-                                        <li class="list-group-item">Peras</li>
-                                        <li class="list-group-item">Plátanos</li>
-                                        <li class="list-group-item">Melones</li>
-                                      </ul>
                                 </div>
                             </div>
-                            </li>
-                        </ul>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Verduras
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <ul class="list-group">
+                                                <a class="text-decoration-none" href="">
+                                                    <li class="list-group-item text-decoration-none">Tomates</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Pepinos</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Berenjenas</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Zanahorias</li>
+                                                </a>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Frescos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <ul class="list-group">
+                                                <a class="text-decoration-none" href="">
+                                                    <li class="list-group-item text-decoration-none">Huevos</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Carne</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Pescado</li>
+                                                </a>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        Obrador
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <ul class="list-group">
+                                                <a class="text-decoration-none" href="">
+                                                    <li class="list-group-item text-decoration-none">Pan</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Bollería</li>
+                                                </a>
+                                                <a href="" class="text-decoration-none">
+                                                    <li class="list-group-item">Rosquillas</li>
+                                                </a>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Quesos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Azules</li>
+                                            <li class="list-group-item">Cremosos</li>
+                                            <li class="list-group-item">Emmental</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                        aria-controls="flush-collapseSix">
+                                        Otros
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Mermeladas</li>
+                                            <li class="list-group-item">Utensilios</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-9">
-
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb fs-3">
+                            <li class="breadcrumb-item"><a href="#">Categorias</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Frutas</li>
+                        </ol>
+                    </nav>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block mx-4" style="width: 15rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div>asdasdsad</div>
+    </footer>
 </body>
 
 </html>
