@@ -1,8 +1,3 @@
-header {
-    position: relative;
-    border-bottom: 1px solid black;
-}
-
 @media screen and (max-width:800px) {
     #imagen_decorativa {
         display: none;
