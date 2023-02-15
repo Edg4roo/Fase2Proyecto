@@ -378,3 +378,17 @@ footer a>img {
     width: 5rem;
     margin-right: 2rem;
 }
+
+/* Alineación de texto */
+
+.text_right {
+    text-align: end;
+}
+
+.text_left {
+    text-align: start;
+}
+
+.text_center {
+    text-align: center;
+}

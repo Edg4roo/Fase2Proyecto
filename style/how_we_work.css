@@ -16,18 +16,6 @@ main {
     justify-content: center;
 }
 
-.text_right {
-    text-align: end;
-}
-
-.text_left {
-    text-align: start;
-}
-
-.text_center {
-    text-align: center;
-}
-
 .line {
     margin-top: 3rem;
     margin-bottom: 3rem;
