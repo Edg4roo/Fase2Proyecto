@@ -1,0 +1,49 @@
+main {
+    font-family: 'Quicksand', sans-serif;
+    color: #23201B;
+}
+
+.lateral_img {
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_right {
+    text-align: end;
+}
+
+.text_left {
+    text-align: start;
+}
+
+.line {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.line_header {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.text_content {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.vl {
+    border-left: 1px solid black;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
