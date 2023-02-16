@@ -1,13 +1,22 @@
+main {
+    font-family: 'Quicksand', sans-serif;
+    color: #23201B;
+}
+
+.h-25 {
+    height: 33rem;
+}
+
 .pt-4 {
     padding-top: 4rem;
 }
 
-.pt-1 {
-    padding-top: 1rem;
+.line_header {
+    font-size: 1.8rem;
 }
 
-.ps-1 {
-    padding-left: 1rem;
+.pt-1 {
+    padding-top: 1rem;
 }
 
 .pb-2 {
@@ -15,10 +24,32 @@
 }
 
 .pb-08 {
-    padding-bottom: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.card_title {
+    color: #F5F5F5;
+    font-size: 1.5rem;
+}
+
+.list {
+    padding-left: 2rem;
+    height: 13rem;
+    font-size: 1.1rem;
+}
+
+.p-2{
+    padding: 2rem;
 }
 
 .card {
     border-radius: 5%;
     background-color: #23201B;
+}
+
+.price {
+    color: #F5F5F5;
+    font-size: 1.3rem;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
 }
