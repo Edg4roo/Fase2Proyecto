@@ -53,3 +53,7 @@ main {
     padding-bottom: 5rem;
     padding-top: 3rem;
 }
+
+.ln-25 {
+    line-height: 25px;
+}
