@@ -23,7 +23,7 @@ main {
     padding-bottom: 2rem;
 }
 
-.pb-08 {
+.pb-1 {
     padding-bottom: 1rem;
 }
 
@@ -34,6 +34,7 @@ main {
 
 .list {
     padding-left: 2rem;
+    padding-right: 2rem;
     height: 13rem;
     font-size: 1.1rem;
 }
@@ -45,6 +46,7 @@ main {
 .card {
     border-radius: 5%;
     background-color: #23201B;
+    height: fit-content;
 }
 
 .price {
