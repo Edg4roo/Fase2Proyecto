@@ -149,18 +149,27 @@ header ul li a {
 
 .dropdown {
     display: inline-block;
+    position: relative;
 }
 
 ul .dropdown img {
     display: inline-block;
     width: 1rem;
+    margin-left: 0.3rem;
 }
 
 .dropdown_child {
     display: none;
     border-radius: 20px;
-    position: fixed;
+    position: absolute;
+    top: 100%; 
+    left: 35%; 
     background-color: #A69B03;
+    width: 12rem;
+}
+
+.user_block .dropdown_child {
+    width: 9rem;
 }
 
 .dropdown_child a {
@@ -179,7 +188,6 @@ ul .dropdown img {
 
 .dropdown:hover .dropdown_child {
     display: block;
-    position: fixed;
 }
 
 /* Submenu desplegable */
@@ -225,6 +233,11 @@ body {
 /* Main */
 main {
     margin-bottom: 5rem;
+}
+
+main {
+    font-family: 'Quicksand', sans-serif;
+    color: #23201B;
 }
 
 /* Titulo de la página */
@@ -391,4 +404,53 @@ footer a>img {
 
 .text_center {
     text-align: center;
+}
+
+/* Encabezado de línea */
+
+.line_header {
+    font-size: 1.8rem;
+}
+
+/* Separaciones */
+
+ /* Padding */
+
+    .pt-4 {
+        padding-top: 4rem;
+    }
+
+    .pt-1 {
+        padding-top: 1rem;
+    }
+
+    .pb-2 {
+        padding-bottom: 2rem;
+    }
+
+    .pb-1 {
+        padding-bottom: 1rem;
+    }
+
+    .p-2{
+        padding: 2rem;
+    }
+
+/* Separación de texto */
+
+.ln-25 {
+    line-height: 25px;
+}
+
+/* Card */
+
+.card_title {
+    color: #F5F5F5;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 5%;
+    background-color: #23201B;
+    height: fit-content;
 }

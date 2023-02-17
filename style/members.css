@@ -1,37 +1,3 @@
-main {
-    font-family: 'Quicksand', sans-serif;
-    color: #23201B;
-}
-
-.h-25 {
-    height: 33rem;
-}
-
-.pt-4 {
-    padding-top: 4rem;
-}
-
-.line_header {
-    font-size: 1.8rem;
-}
-
-.pt-1 {
-    padding-top: 1rem;
-}
-
-.pb-2 {
-    padding-bottom: 2rem;
-}
-
-.pb-1 {
-    padding-bottom: 1rem;
-}
-
-.card_title {
-    color: #F5F5F5;
-    font-size: 1.5rem;
-}
-
 .list {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -39,25 +5,11 @@ main {
     font-size: 1.1rem;
 }
 
-.p-2{
-    padding: 2rem;
-}
-
-.card {
-    border-radius: 5%;
-    background-color: #23201B;
-    height: fit-content;
-}
-
 .price {
     color: #F5F5F5;
     font-size: 1.3rem;
     padding-bottom: 1rem;
     padding-top: 3rem;
-}
-
-.ln-25 {
-    line-height: 25px;
 }
 
 main button {

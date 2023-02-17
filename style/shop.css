@@ -21,3 +21,40 @@ header {
 .fc_pistachio{
     color: #A69B03;
 }
+
+footer {
+    padding-top: 1rem;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    display: block;
+    background-color: #23201B;;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border-radius:  90% 90% 0 0 / 30%;
+}
+
+footer h4 {
+    color: #61460F;
+}
+
+footer p, ul li {
+    color: #A69B03;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer ul li a:visited {
+    color: orangered;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a>img {
+    width: 2rem;
+}
