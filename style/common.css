@@ -145,6 +145,14 @@ header ul li a {
     margin-left: 0.5rem;
 }
 
+/* Centrar */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Menu desplegable */
 
 .dropdown {
@@ -436,6 +444,17 @@ footer a>img {
         padding: 2rem;
     }
 
+    .py-3{
+        padding: 3rem 0;
+    }
+
+    .ps-2 {
+        padding-left: 2rem;
+    }
+
+    .pe-2 {
+        padding-right: 2rem;
+    }
 /* Separación de texto */
 
 .ln-25 {

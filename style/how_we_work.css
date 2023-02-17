@@ -10,12 +10,6 @@ main {
     border-radius: 5%;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .line {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -39,11 +33,3 @@ main {
     margin:0;
 }
 
-.line_header_icon {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-.py-3 {
-    padding-top: 3rem;
-}
