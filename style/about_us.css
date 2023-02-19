@@ -1,13 +1,23 @@
+@media screen and (max-width:800px) {
+
+    .lateral_img {
+display: none;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .lateral_img {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+    }
+}
+
 main {
     font-family: 'Quicksand', sans-serif;
     color: #23201B;
-}
-
-.lateral_img {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
 }
 
 .center {

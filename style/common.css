@@ -17,7 +17,7 @@
     }
 
     header {
-        position: fixed;
+        position: relative;
     }
 
     .phone_header {
@@ -158,6 +158,7 @@ header ul li a {
 .dropdown {
     display: inline-block;
     position: relative;
+    height: fit-content;
 }
 
 ul .dropdown img {
@@ -448,6 +449,10 @@ footer a>img {
         padding: 3rem 0;
     }
 
+    .py-2{
+        padding: 2rem 0;
+    }
+
     .ps-2 {
         padding-left: 2rem;
     }
@@ -472,4 +477,10 @@ footer a>img {
     border-radius: 5%;
     background-color: #23201B;
     height: fit-content;
+    margin-bottom: 2rem;
+}
+
+/* Imagen de perfil */
+.thumbnail {
+    border-radius: 50%;
 }

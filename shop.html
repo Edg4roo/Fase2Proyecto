@@ -10,48 +10,81 @@
     <link rel="stylesheet" href="style/bootstrap-icons.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/shop.css">
+    <link rel="stylesheet" href="style/bootstrap_commons.css">
     <title>Comprar</title>
 </head>
 
 <body>
     <header>
         <div class="container bg_darkbrown">
-            <div class="row">
-                <div class="col-4 border border-dark justify-content-center d-flex align-items-center">
-                    <img src="/img/icons/icon.png" class="header_icon w-50" alt="">
+            <div class="row pb-5 pb-md-0 pt-2 pb-md-0">
+                <div class="col-4 justify-content-start justify-content-md-center d-flex align-items-center">
+                    <div class="header_icon">
+                        <a href="index.html">
+                            <img src="img/icons/icon.png" class="d-none d-md-block" alt="">
+                            <img src="img/icons/icon_no_text.png" id="phone_icon" class="d-block d-md-none" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="d-flex h-100 align-items-center justify-content-center">
+                <div class="col-4 p-0">
+                    <div class="d-none d-md-flex h-100 align-items-center justify-content-center">
                         <img src="/img/icons/search_icon.png" class="header_icon mx-2" alt="">
                         <input type="text" name="" id="">
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="d-flex h-100 align-items-center justify-content-center ">
-                        <img src="/img/icons/user_icon.png" class="header_icon mx-2" alt="">
+                    <div class="d-flex h-100 align-items-center justify-content-end justify-content-md-center">
+                        <div class="dropdown d-flex">
+                            <button class="dropdown-toggle btn p-0 m-0 d-flex position-relative" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/icons/phone_menu.png" class="header_icon" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Comprar</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Conócenos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="about_us.html">Sobre nosotros</a></li>
+                                        <li><a class="dropdown-item" href="how_we_work.html">Cómo trabajamos</a></li>
+                                        <li><a class="dropdown-item" href="members.html">Socios</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="blog_recipes1.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="video1.html">Vídeos</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown d-flex align-items-center">
+                            <button class="dropdown-toggle btn ps-2 p-0 m-0 d-flex align-items-center" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/icons/user_icon.png" class="header_icon" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Iniciar sesión</a></li>
+                                <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+                            </ul>
+                        </div>
                         <img src="/img/icons/shooping_bag_icon.png" class="header_icon mx-2" alt="">
                     </div>
-
                 </div>
-                <div class="row">
+                <div class="row d-none d-md-block">
                     <div class="col-12">
                         <div class="h-100 d-flex justify-content-center align-items-center">
                             <ul class="nav nav-pills fs-4 ff_poppins ">
                                 <li class="nav-item mx-4">
-                                    <a class="nav-link fc_pistachio" aria-current="page" href="#">Comprar</a>
+                                    <a class="nav-link " aria-current="page" href="#">Comprar</a>
                                 </li>
                                 <li class="nav-item mx-4">
-                                    <a class="nav-link fc_pistachio" href="#">Conócenos</a>
+                                    <a class="nav-link " href="">Conócenos</a>
                                 </li>
                                 <li class="nav-item mx-4">
-                                    <a class="nav-link fc_pistachio" href="#">Contacto</a>
+                                    <a class="nav-link " href="contact.html">Contacto</a>
                                 </li>
                                 <li class="nav-item mx-4">
-                                    <a class="nav-link fc_pistachio" href="#">Blog</a>
+                                    <a class="nav-link " href="blog_recipes1.html">Blog</a>
                                 </li>
                                 <li class="nav-item mx-4">
-                                    <a class="nav-link fc_pistachio" href="#">Vídeos</a>
+                                    <a class="nav-link " href="video1.html">Vídeos</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,14 +97,14 @@
     <main>
         <div class="container">
             <div class="row my-5">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1>Pedidos</h1>
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-8 page_title">
+                    <h1>Comprar</h1>
                 </div>
                 <div class="col-2"></div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-md-3 d-flex justify-content-center align-items-start">
                     <div class="card" style="width: 15rem;">
                         <div class="card-header">
                             Catálogo
@@ -208,13 +241,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                        aria-controls="flush-collapseSix">
-                                        Otros
-                                    </button>
+                            <div class="accordion-item>
+                                <h2 class=" accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Otros
+                                </button>
                                 </h2>
                                 <div id="flush-collapseSix" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -229,114 +262,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-9">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb fs-3">
-                            <li class="breadcrumb-item"><a href="#">Categorias</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Frutas</li>
-                        </ol>
-                    </nav>
+                <div class="col-12 col-md-9 d-flex d-md-block justify-content-center pt-5 pt-md-0">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="">
+                                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                    <ol class="breadcrumb fs-3">
+                                        <li class="breadcrumb-item">Categorias</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Frutas</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="card my-3 mb-2 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/manzana.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Manzana</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/platano.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Plátano</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/coco.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Coco</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/kiwi.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Kiwi</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/granada.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Granada</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/limon.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Limón</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/mango.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Mango</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/maracuya.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Maracuyá</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
-                            <div class="card d-inline-block mx-4" style="width: 15rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card my-3 d-inline-block mx-4" style="width: 15rem;">
+                                <img src="img/products/papaya.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Papaya</h5>
+                                    <a href="#" class="btn btn-darkgreen">Comprar</a>
                                 </div>
                             </div>
+                            <nav aria-label="...">
+                                <ul class="pagination align-items-center justify-content-center">
+                                    <li class="page-item active rounded"><a href="#">1</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -344,8 +348,37 @@
         </div>
     </main>
     <footer class="w-100 mb-0">
-        <div class="w-100">
-            
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <h4>Verdularia</h4>
+                    <p>C/Inventada, 4,<br>
+                        Oliva, Valencia (46780)</p>
+                </div>
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <h4>Contacto</h4>
+                    <ul class="p-0">
+                        <li>Num. tlf: 000 000 000</li>
+                        <li>verdularia@gmail.com</li>
+                        <a href=""><img src="/img/icons/twitter_icon.png" alt="twitter"></a>
+                        <a href=""><img src="/img/icons/instagram_icon.png" alt="instagram"></a>
+                        <a href=""><img src="/img/icons/facebook_icon.png" alt="facebook"></a>
+                        <a href=""><img src="/img/icons/linkedin_icon.png" alt="linkedin"></a>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <h4>Legal</h4>
+                    <ul class="p-0">
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href=""> Términos y condiciones</a></li>
+                        <li><a href=""> Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                    <img src="/img/icons/organic_logo.png" class="me-4 footer_logo" alt="">
+                    <img src="/img/icons/sustainable_logo.png" class="footer_logo" alt="">
+                </div>
+            </div>
         </div>
     </footer>
 </body>
